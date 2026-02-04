@@ -8,7 +8,7 @@ O objetivo é validar fluxos financeiros simulados, garantindo consistência, se
 ## 🚀 Tecnologias utilizadas
 - [Spring Boot](https://spring.io/projects/spring-boot)  
 - [Spring Data JPA](https://spring.io/projects/spring-data-jpa)  
-- [H2 Database](https://www.h2database.com/) (para testes)  
+- [PostgreSQL](https://www.postgresql.org/)
 - [Spring Web](https://spring.io/projects/spring-web)  
 - [Maven](https://maven.apache.org/)  
 
