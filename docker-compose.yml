@@ -7,8 +7,8 @@ services:
     restart: always
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 1234
-      POSTGRES_DB: db_agendamento
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: db_payments
     ports:
       - "5432:5432"
     volumes:

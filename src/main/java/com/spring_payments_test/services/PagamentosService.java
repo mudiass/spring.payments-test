@@ -40,10 +40,10 @@ public class PagamentosService {
         validarSaldoDoUsuario(pagador, pagamentoDTO.value());
         validarPagamento();
 
-        pagador.getCarteira().setSaldo(pagador.getCarteira().getSaldo().subtract(PagamentoDTO.value()));
+        pagador.getCarteira().setSaldo(pagador.getCarteira().getSaldo().subtract(pagamentoDTO.value()));
         atualizarSaldoDaCarteira(pagador.getCarteira());
 
-        recebedor.getCarteira().setSaldo(pagador.getCarteira().getSaldo().add(PagamentoDTO.value()));
+        recebedor.getCarteira().setSaldo(pagador.getCarteira().getSaldo().add(pagamentoDTO.value()));
         atualizarSaldoDaCarteira(recebedor.getCarteira());
 
         Pagamentos pagamentos = Pagamentos.builder()
